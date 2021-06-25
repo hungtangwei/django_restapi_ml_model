@@ -6,6 +6,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[**Enlish**](https://github.com/hungtangwei/django_restapi_ml_model/) | [**中文說明**](https://github.com/ymcui/Chinese-BERT-wwm/blob/master/README_EN.md)
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -16,6 +17,7 @@
 
 
 <!-- PROJECT LOGO -->
+
 <br />
 <p align="center">
   <a href="https://github.com/hungtangwei/django_restapi_ml_model">
@@ -88,13 +90,13 @@
         <li><a href="#create-ab-test">Create A/B model in the database</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#containers">Containers/a>
+    <!-- <li>
+      <a href="#containers">Containers</a>
       <ul>
         <li><a href="#prep-code">Prepare the code</a></li>
         <li><a href="#docker">Dockerfiles</a></li>
       </ul>
-    </li>
+    </li> -->
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
