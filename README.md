@@ -6,7 +6,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[**Enlish**](https://github.com/hungtangwei/django_restapi_ml_model/) | [**中文說明**](https://github.com/ymcui/Chinese-BERT-wwm/blob/master/README_EN.md)
+[**Enlish**](https://github.com/hungtangwei/django_restapi_ml_model/) | [**中文**](https://github.com/ymcui/Chinese-BERT-wwm/blob/master/README_EN.md)
+<br />
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
