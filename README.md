@@ -47,48 +47,51 @@
 <details open="open">
   <summary>Table of Contents</summary>
   <ol>
+  <li>
+      <a href="#introduction">Introduction</a>
+    </li>
     <li>
       <a href="#start">Start</a>
       <ul>
-        <li><a href="#setup">Setup git repository</a></li>
+        <li><a href="#setup-git-repository">Setup git repository</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#start-project">Start Django project</a></li>
+        <li><a href="#start-django-project">Start Django project</a></li>
       </ul>
     </li>
     <li>
       <a href="#build-ml-model">Build ML algorithms</a>
       <ul>
-        <li><a href="#set-jupyter">Setup Jupyter notebook</a></li>
-        <li><a href="#train-ml">Train ML algorithms</a></li>
+        <li><a href="#set-jupyter-notebook">Setup Jupyter notebook</a></li>
+        <li><a href="#train-ml-model">Train ML algorithms</a></li>
       </ul>
     </li>
     <li>
       <a href="#django-models">Django models</a>
       <ul>
         <li><a href="#create-django-models">Create Django models</a></li>
-        <li><a href="#train-ml">Create RESTFUL API for models</a></li>
+        <li><a href="#create-restful-api-for-models">Create RESTFUL API for models</a></li>
       </ul>
     </li>
     <li>
-      <a href="#add-ml-model">Add ML algorithms to the server code</a>
+      <a href="#add-ml-models-to-the-server">Add ML algorithms to the server</a>
       <ul>
-        <li><a href="#ml-server">ML code in the server</a></li>
-        <li><a href="#ml-registry">Algorithms registry</a></li>
-        <li><a href="#add-ml-registry">Add ML algorithms to the registry</a></li>
+        <li><a href="#ml-code-in-the-server">ML code in the server</a></li>
+        <li><a href="#algorithms-registry">Algorithms registry</a></li>
+        <li><a href="#add-ml-models-to-the-registry">Add ML algorithms to the registry</a></li>
       </ul>
     </li>
     <li>
-      <a href="#make-pred">Making predictions</a>
+      <a href="#making-predictions">Making predictions</a>
       <ul>
-        <li><a href="#pred-view">Predictions view</a></li>
-        <li><a href="#add-tests">Add tests for PredictView</a></li>
+        <li><a href="#predictions-view">Predictions view</a></li>
+        <li><a href="#add-tests-for-predict-view">Add tests for PredictView</a></li>
       </ul>
     </li>
     <li>
-      <a href="#ab-test">A/B testing</a>
+      <a href="#ab-testing">A/B testing</a>
       <ul>
-        <li><a href="#add-ml2">Add second ML algorithm</a></li>
-        <li><a href="#create-ab-test">Create A/B model in the database</a></li>
+        <li><a href="#add-second-ml-model">Add second ML algorithm</a></li>
+        <li><a href="#create-ab-model-in-the-database">Create A/B model in the database</a></li>
       </ul>
     </li>
     <!-- <li>
@@ -107,38 +110,87 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## Start
+<!-- Introduction -->
+## Introduction
+This tutorial will introduce how to build Machine Learning system available with RESTFUL API by Django framework.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+In this repository, The versions for building the Machine Learning service are Python 3.8.10 and Django 3.2.4.
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This tutorial is suitable for readers who are familiar with Machine Learning and would like to learn how to build Machine Learning web services. Therefore, basic Python knowledge is required.
+<!-- Start -->
+## Start 
+In this chapter, here are four main tasks you will learn:
+* How to set up a git repository.
+* Setup environment for development.
+* Install required packages.
+* Start the Django project.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+#### Setup Git Repository
+The first step is to create a new repository in GitHub.
+![Create new repository][create-repo-screenshot]
+<br />
+Then please go to your terminal and set the repository:
+```sh
+  git clone [your repository url]
+  cd django_restapi_ml
+  ls -l
+  ```
+To check files in the repository.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
+#### Installation
+Let's set up and activate the environment for development.
+I will use pyenv + pipenv to set up the environment.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+1. To install the python version in pyenv and set python version in pyenv:
+```sh
+  pyenv install 3.8.10
+  pyenv local 3.8.10
+  ```
 
-### Built With
+<br />
+
+2. Install pipenv and set up python version and install libraries:
+```sh
+  pip install pipenv
+  pipenv install --python 3.8.10 django==3.2.4 djangorestframework sklearn numpy pandas 
+  ```
+<br />
+
+3. Run the virtual machine:
+```sh
+  pipenv shell
+  ```
+
+#### Start Django Project
+
+
+<!-- Build ML Model -->
+## Build ML Model
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
 * [Laravel](https://laravel.com)
 
+#### Set Jupyter Notebook
+
+#### Train ML Model
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Django modles -->
+## Django Models
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+#### Create Django Models
+
+
+#### Create RESTful API For Models
+
+
+<!-- Add ML models to the server-->
+## Add ML Models To The Server
 
 This is an example of how to list things you need to use the software and how to install them.
 * npm
@@ -146,7 +198,17 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
+#### ML Code In The Server
+
+
+#### Algorithms Registry
+
+
+#### Add ML Models To The Registry
+
+
+<!-- Making Predictions -->
+## Making Predictions
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
@@ -163,20 +225,26 @@ This is an example of how to list things you need to use the software and how to
    ```
 
 
+#### Predictions View
 
-<!-- USAGE EXAMPLES -->
-## Usage
+#### Add Tests For Predict View
+
+<!-- A/B Testing -->
+## AB Testing
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+#### Add Second ML Model
 
 
-<!-- ROADMAP -->
+#### Create AB Model In The Database
+
+<!-- ROADMAP
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues). -->
 
 
 
@@ -241,4 +309,4 @@ Project Link: [https://github.com/hungtangwei/django_restapi_ml_model](https://g
 [license-url]: https://github.com/hungtangwei/django_restapi_ml_model/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/tang-wei-hung-4a3042165/
-[product-screenshot]: images/screenshot.png
+[create-repo-screenshot]: images/create_repo.png
